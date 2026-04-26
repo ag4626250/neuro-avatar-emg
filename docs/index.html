@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrucciones para su electromiografía</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero" aria-labelledby="main-title">
+      <p class="hero-tag">Información para pacientes</p>
+      <section class="intro">
+        <h1 id="main-title">Instrucciones para su electromiografía</h1>
+        <p>
+          A continuación puede ver un vídeo con indicaciones importantes antes de realizar su prueba.
+        </p>
+      </section>
+    </header>
+
+    <section class="video-panel" aria-label="Vídeo informativo">
+      <div class="panel-heading">
+        <h2>Vídeo informativo</h2>
+        <p>Revise estas indicaciones antes de acudir a su prueba.</p>
+      </div>
+
+      <!-- Contenedor vertical para mantener una presentación limpia del vídeo móvil. -->
+      <div class="video-card">
+        <!-- El vídeo se sirve desde los recursos locales del proyecto. -->
+        <video id="instruction-video" class="video-player" controls preload="metadata">
+          <source src="../assets/video/AvatarFem_v1.mp4" type="video/mp4">
+          Su navegador no permite reproducir este vídeo.
+        </video>
+      </div>
+
+      <button id="restart-video" class="restart-button" type="button">
+        Volver a reproducir desde el inicio
+      </button>
+    </section>
+
+    <section class="help-note" aria-label="Información adicional">
+      <p>Si tiene dudas, consulte con su especialista o con el personal del centro.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
